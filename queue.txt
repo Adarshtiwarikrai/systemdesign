@@ -1,0 +1,39 @@
+Queue
+1 it is data structure that follow first in and first out format means the element we put first from one we 
+remove that from other end first
+
+Queue Full and Empty Problems
+
+1 queue full is the problem which arrive in the fixed size queue this happen when we try to push the element but it is
+already full 
+2 queue empty is the problem which arrive in queue when we try to remove the element from empty queue 
+3 to solve this problem we can check before enqueue or push and dequeue or pop  
+4 we can also use circular queue 
+
+
+Blocking queue
+1 it is the queue we mainly use in multithreaded programming language like rust java 
+2 in this queue if we try to dequeue if the queue is empty we have to wait or thread block  till the there is some element 
+in some language it throw exception 
+3 in this if we try to enqueue if the queue is full we have to wait or thread block till there is some free up space like async 
+
+Producer and Consumer
+1 producer create work like enqueue data or element 
+2 Consumer consume and process the work like dequeue 
+3 synchronization is very important we the sync does not happen the crash may happen for eg
+4 consumer reads from the empty queue and system creash 
+5 producer push to the full queue and system crash or overwrite
+6 blocking queue solve this problem automatically
+
+thread pool
+1 it is the collection of worker thread that perform some operation in task assign to them 
+2 main thing is that this thread are reusable thread means that are not destoryed and constructed for each task that save lot of resource 
+and compuatation 
+3 we push the task to task queue or blocking queue then this thread fetch them and perform the operations
+
+big compute architecture
+1 when system requirment are larger then one machine can handle we scale out 
+2 big compute refers to distributed ,parllel processing over many nodes
+3 we create one global queue to distribute jobs to worker machine 
+4 and there are thread pool inside each worker machine to distribute the jobs
+5 we use the global queue to maintain some state or data that need to be accessed by each worker node

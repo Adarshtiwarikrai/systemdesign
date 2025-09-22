@@ -1,0 +1,13 @@
+basic caching 
+1 a cache is temporary storage of data that is slow or expensive to fetch from the main source and 
+that is used often and too much 
+2 to reduce the fetch and same repetitive task we store them inmemory or some place where retrival is 
+fast like redis or some other cachine queue
+
+Deduplication Cache
+Meta cache
+1 it store the data about the data 
+2 example of meta data include file name file location file last retrival timestamp file size\
+3 it help to easy locate the file and make retrival fast instead of fetch from the disk which can expensive
+4 file system keep the metadata of frequetly accessed dirctory to quickly list file without hitting the actual disk
+5

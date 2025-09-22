@@ -1,0 +1,14 @@
+Log
+1 a log is append only records of event or changes
+2 each operation (insert ,update ,delete ,query result) is written at the end instead of 
+modifiying the old entries
+3 they are sequtial and fast to write 
+4 easy recovery after the crash we can replay the log after the system crash to come to consitent state 
+
+Index
+1 index is data structure that improve the speed of retrival from the database
+2 it work like loopup table or book index 
+3 without the index we have to search whole database or table to find the data 
+4 with the index it provide the direct or hieraricial path to the data location 
+5 but index take extra space and it need to updated when data changes
+
