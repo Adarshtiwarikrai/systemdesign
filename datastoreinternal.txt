@@ -12,3 +12,29 @@ Index
 4 with the index it provide the direct or hieraricial path to the data location 
 5 but index take extra space and it need to updated when data changes
 
+time series data 
+1 it is data is ordered by the time (timestamp)
+
+simple key value database
+1 store data in key value pair 
+2 key is the unique identifier value is the data 
+3 extermly fast to search and retrive data 
+4 easy to scale horizontally
+5 eg "user:123" → {"name": "Alice", "age": 25}
+"session:456" → "active"
+6 redis is one of the example of this
+
+hash index
+1 it is just like hashmap 
+2 we make indexing 
+
+b-tree index
+1 it is self balancing tree data structure
+2 database store data in disk where input and output is generally slow compared to ram but ram 
+can only keep some data
+3 without b-tree index database has to read every single data from the disk sequtial until it found one
+4 b-tree can pack many keys and pointer to child node in a single node 
+5 it is very efficient for range query 
+6 each b tree node  is stored as single page so we can store multiple key and child reference 
+
+embedded database
