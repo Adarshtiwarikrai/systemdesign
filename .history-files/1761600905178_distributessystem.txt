@@ -1,0 +1,69 @@
+distributesd system
+
+1 what is distributed system
+2 why distributed system
+3 what is distributed computing
+4 what is distributed system architecture
+5 what is distributed system model
+6 what is distributed system components
+7 what is distributed system services
+8 what is distributed system protocols
+9 what is distributed system communication
+10 what is distributed system communication model
+11 what is distributed system communication protocols
+
+1 a distributed system is a collection of independent computers that appear to users as a single coherent system or 
+in other words a distributed system is a system in which components hardware or software located at networked computers 
+communicate and coordinate their actions by passing messages
+2 distributed systems are used to share resources, improve performance, enhance reliability, and provide scalability.
+3 distributed computing is a field of computer science that studies distributed systems and the algorithms and protocols
+that enable them to function effectively.
+4 distributed system architecture is the design and organization of a distributed system, including the hardware and software components,
+the communication protocols, and the algorithms used to coordinate the actions of the components.
+5 distributed system model is a conceptual framework that describes the structure and behavior of a distributed system.
+6 distributed system components are the individual hardware or software components that make up a distributed system.
+7 distributed system services are the functions and capabilities that a distributed system provides to its users.
+8 distributed system protocols are the rules and conventions that govern the communication between the components of a distributed system 
+widely used in grpc .
+
+1 why distributed systems are hard to design and implement?
+ans distributed systems are hard to design and implement because they involve many complex issues, such as communication delays, network failures, 
+data concurrency(excution of multiple computaion on same piece of data might interfere with each other ) and partial component failures.
+distributed systems are also hard to design and implement because they require a deep understanding of computer science 
+concepts such as algorithms, data structures, and network protocols.
+
+2 what is partitioning in distributed systems?
+ans partitioning in distributed systems is the process of dividing a large dataset into smaller, more manageable pieces and distributing them across multiple nodes in a network.
+partitioning is used to improve the performance and scalability of distributed systems by allowing multiple nodes to process data in parallel.
+
+3 type of partitioning
+ans vertical partitioning
+this form of partitiioning mainly comes from relation database where we partitiion data or table to multiple table with fewer columns and 
+then we can store this multiple table to different node
+
+dis
+we have to get the data from the multiple node to complete the data we use very complex join statement that reduce efficency of the system
+
+horizontal partitioning
+this form of partitioning is mainly used in distributed database where we divide data into multiple parts and store it to different node
+dis
+we may still have to search for multiple node to get the data we need because the data range of search query may be in different node 
+
+trade off
+in partitioning there is always of a trade off between the consistency of data because it is very to perform atomic operation in distributed system
+
+type of partitioning
+1 range 
+1 this is the most basic one in this we split dataset in range according to the value of the specific column and we then store 
+  each split in different node of course some central system or master node maintain a list of all the range and map which node store 
+  specific range 
+
+advantages
+1 it is very easy to implement
+2 it is very easy to maintain
+3 it is very easy to scale
+4 it is very easy to perform query
+5 it is easy to resize we can increase one range and decrease the other range and reexchange between data in very less
+6 good performance on the range query 
+disadvantages
+1 bad performance on 

@@ -1,0 +1,19 @@
+distributesd system
+
+1 what is distributed system
+2 why distributed system
+3 what is distributed computing
+4 what is distributed system architecture
+5 what is distributed system model
+6 what is distributed system components
+7 what is distributed system services
+8 what is distributed system protocols
+9 what is distributed system communication
+10 what is distributed system communication model
+11 what is distributed system communication protocols
+
+1 a distributed system is a collection of independent computers that appear to users as a single coherent system or 
+in other words a distributed system is a system in which components hardware or software located at networked computers 
+communicate and coordinate their actions by passing messages
+2 distributed systems are used to share resources, improve performance, enhance reliability, and provide scalability.
+3 distributed computing is a field of computer science that studies distributed systems and the algorithms and protocols

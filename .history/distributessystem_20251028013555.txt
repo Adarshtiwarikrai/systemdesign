@@ -1,0 +1,15 @@
+distributesd system
+
+1 what is distributed system
+2 why distributed system
+3 what is distributed computing
+4 what is distributed system architecture
+5 what is distributed system model
+6 what is distributed system components
+7 what is distributed system services
+8 what is distributed system protocols
+9 what is distributed system communication
+10 what is distributed system communication model
+11 what is distributed system communication protocols
+
+1 a d
