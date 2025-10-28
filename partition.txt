@@ -37,3 +37,26 @@ disadvantages
 2 it is not good for the data that is not evenly distributed
 3 bad performance on the range query for the partition key when the range is very big 
 
+hashing partition
+in this type of partition we use specific hash function on the specific attribute of the data to decide which data go at which node or server 
+formula usually is hash(key)%N
+advantages
+1 easy to implement
+2 if hash function is good it high change we divide the data uniformly  
+disadvantages
+1 if added or removed a node or server then the massive mapping or allocation of data will happen 
+
+
+consistent hashing 
+in this type of partition assume that we place server or node in round circle using the hash function and same for the data key then we pass the 
+request to nearest server to the right 
+but there may be some issue of load imbalance to overcome we use virtual node or server which means we use different hash function on the same server or node 
+due to this we can have more position of same sever in ring or circle 
+disadvantages
+1 it is hard to implment 
+2 if we do not use the virtual node there may high chance of load imbalance
+advantages 
+1 it make shuffling of data less 
+2 fault tolerance even if some node goes down next nearest node take over 
+3 scalability high due to fault tolerance
+

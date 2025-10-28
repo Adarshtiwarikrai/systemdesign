@@ -1,0 +1,64 @@
+replica
+1 replication is a technique in distributed system to increase the aviablility in this we store the same piece of data in multiple node or server 
+to avoid data loss if one the node creashed request can be served from the other node 
+
+why 
+1 make system fault tolerant 
+2 make system highly aviablility
+3 make the system faster serve the data from the nearest location 
+4 balance load between different node or server
+
+
+1 method of replication 
+
+1 pessimistic replication :- in this form of replication we try to maintain consistency of data 
+between different node from the start like they are the one copy of data 
+
+why 
+strong consistency required for eg banking transcation 
+no conflict resolution required 
+
+dis
+slow write due to every update must propogate through other node too 
+
+2 optimisstic replication :- in this form of replication data not hard consistent it will eventually be consistent
+why 
+highly aviablility
+faster write 
+
+dis
+temporary inconsistency 
+
+1 one master node 
+In this type of system we make one node from all the replica a master node which handle all the write operation and
+forward all the updates to other nodes(follower ) this follower can only handle read request not write request 
+
+1 method of passing updated 
+synchronized 
+master node first excute it then pass the updates to other node and then wait for replica response if every replica 
+response ok then updates excuted 
+
+advantages
+strong consistency
+disadvantages
+slow writes 
+
+async
+master node first excute it locally then pass the update to other node but it does not wait for the response from the other 
+node it reply as soon as it excute locally 
+1 advantages
+higher writes
+1 disadvantages
+some inconsistency
+
+2 multiple master node
+in this type of system all the or multiple replica can act as master node write request are handle by multiple node then 
+updates of each nodes are passed to other nodes make all data consistency but in this since each node handle write there
+may be some conflict arise due to order of request or data to make system operational we have to resolve this conflict 
+
+method to solve the conflict 
+
+1 exponse the client 
+when conflict arise multiple avaible version exponse to client then client make decision which to keep and which to not 
+2 last write 
+other way to resolve conflict is last write win 
