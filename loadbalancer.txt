@@ -1,0 +1,41 @@
+load balnacer 
+the job of the load balancer is fairly and smartly divide the all the request to pool  of server to avoid overloading 
+of server and crashing server
+
+load balancer is not required for the hundered or thousand of request but as load increase we require load balancer 
+it can providie the scalability ,aviablility,and performance
+scalability:- it can add more server as the load increase ,lb make upscallling and downscalling transpernt to end user
+aviablility:- it can add more server if the server creashed due to some error or overloading,lb hide fault and failure 
+              of server
+performance:= it can increase performance my passing the request to least loaded server or nearest server
+
+service of load balancer
+health check:- it always send ping message to each server to check the health of each server
+tls termination :- it manage tls termination to reduce the load on the server
+predictive analysis:- lb can predict traffic rate or patterns by performing analysis over the traffic that 
+                       has passed till now 
+reduced human intervention 
+service discovery :-load balancer keep the registry that contain data about the ip and service it run so it can forward
+                    request to correct hosting server 
+
+there are mainly two type of load balnacer
+globally load balancer:- this type of load balancer are used to decide which region server should handle the request
+for eg usa europe india
+
+it check
+1 user geographical location 
+2 server capcity 
+3 network latency 
+4 server or region health
+
+for eg suppose  india user try to access something on youtube load balancer should first try to get data from india
+region server if they are unable or crashed we can use the usa europs 
+
+they are two ways implment global lb 
+dns based :- in this dns cache all the region server ip like india usa then loop through them to pass the request and 
+             balance load 
+Application Delivery Controllers: main lb are implment using this cloudfare loadbalancer ,google load balancer 
+
+
+locally loadbalancer-: when request reach the region then local loadbalancer decide to pass request to which server 
+
