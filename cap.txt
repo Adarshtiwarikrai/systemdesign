@@ -1,0 +1,11 @@
+CAP THEROM
+intial statement of the cap therom is that it is impossible for distributed 
+system to provied more that two of these three at a time consistency aviablility and 
+partition tolerance
+
+consistency
+in distributed system consistency means each read request receives the result of most 
+recent write
+aviablility
+in distributed system aviablility means each request receives non error response without 
+any gurantee of the recent or latest data 

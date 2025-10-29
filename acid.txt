@@ -1,0 +1,16 @@
+acid property
+1 Atomicity
+in distributed system Atomicity means system to excute some operation in different 
+node or server to complete the transcation either all will be excuted or none will 
+be excuted
+2 consistency
+consistency in general refer to database will go from one valid state to other valid state
+consistency in distributed system refer to all the node or network computer should have same 
+data 
+3 insolation 
+insolation gurantess that even through many transcation happening concurrently and have data
+deppendency the result will be same as them excuted one at the time 
+4 durability 
+it ensure that if one transcation excuted it remain excuted even in the case of failure 
+in case of distributed system it mean that store the transcation in multiple node this case recovery 
+will be possible even in the case of total failure
